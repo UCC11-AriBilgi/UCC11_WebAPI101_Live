@@ -1,0 +1,9 @@
+Bu mini projede WebAPI yapýsý incelenecektir. Proje 2 bacaklý olacaktýr. ve Employee ile ilgili bilgileri gireceðiz/sorgulayacaðýmýz/sileceðimiz iþlemleri olacaktýr
+
+Code First
+
+- EmployeeApi (Server)
+	Burasý hiçbir UserInterface olmayan, geri planýnda bir VT olduðu, üzerine gelen isteklere göre karþý tarafa bilgiyi saðlayan bir yapý olacaktýr.
+
+- EmployeeWeb (Client)
+	Bunda herhangi bir VT olmayacak, User Interface ler olacak. Birbirleriyle haberleþecekler

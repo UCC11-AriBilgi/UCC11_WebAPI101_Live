@@ -1,0 +1,16 @@
+﻿	+1. Öncelikle boş bir VT yaratalım (EmployeeAPIDb)
+	
+	+2.Uygulama VT ile ilgili olacağı için gereken EntityFramework NuGet paketlerinin yüklenmesi
+		. Microsoft.EntityFrameworkCore
+		. Microsoft.EntityFrameworkCore.SqlServer
+		. Microsoft.EntityFrameworkCore.Design
+		. Microsoft.EntityFrameworkCore.Tools
+
+	+3. Code First(CF) yaklaşımını kullanarak bir model oluşturalım
+		Models\Employee.cs
+
+	+4. Gerekli olan DbContext sınıfının oluşturulması (AppDbContext.cs)
+
+	+5. Program.cs altında ilgili VT yapısını ilgilendiren DbContext tanımlarının yapılması(appsettings.json içinden connection stringi okuyacak şekilde)
+
+	+6. Deneme verileri mockaroo dan yaratıldı.
