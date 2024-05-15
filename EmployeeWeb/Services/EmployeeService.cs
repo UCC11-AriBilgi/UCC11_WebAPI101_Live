@@ -1,4 +1,5 @@
-﻿using EmployeeWeb.Models;
+﻿using EmployeeWeb.Helper;
+using EmployeeWeb.Models;
 using EmployeeWeb.Services.Interfaces;
 
 namespace EmployeeWeb.Services
@@ -29,9 +30,13 @@ namespace EmployeeWeb.Services
             return await response.ReadContentAsync<List<Employee>>();
         }
 
-        public Task<Employee> GetById(int id)
+        public async Task<Employee> GetById(int id)
         {
-            throw new NotImplementedException();
+            string ApiPath = _APIbase + "api/Employee" + id; // Gelen id parametresi ile birlikte <aPI tarafına gönderilecek
+
+            var response = await _client.GetAsync(ApiPath);
+
+            return await response.ReadContentAsync<Employee>();
         }
     }
 }
