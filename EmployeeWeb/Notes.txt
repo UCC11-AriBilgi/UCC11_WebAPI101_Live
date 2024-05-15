@@ -1,3 +1,14 @@
-﻿ Bu proje kullanıcı ekranları olacak olan bir proje. Kendi içinde herhangi bir VT ile ilişkili kısımlar olmayacak. Geri planda bu işleri halledecek olan EmployeeAPI ile haberleşecek.
+﻿ 1. Bu proje kullanıcı ekranları olacak olan bir proje. Kendi içinde herhangi bir VT ile ilişkili kısımlar olmayacak. Geri planda bu işleri halledecek olan EmployeeAPI ile haberleşecek.
 
- Bu yapıda da yapılacak olan işlemleri controller içersinde değil de daha geri plana atıp Interfaceler ve Servisler üzerinde gerçekleştirecek şekilde düşünelim. Bu yüzden Services isimli bir dizin yaratalım
+ 2. Bu yapıda da yapılacak olan işlemleri controller içersinde değil de daha geri plana atıp Interfaceler ve Servisler üzerinde gerçekleştirecek şekilde düşünelim. Bu yüzden Services isimli bir dizin yaratalım
+
+ 3. Servis yapılarımız bir Interface yapısını kullanacağı için Service\Interfaces adında bir dizin daha açalım. Ve içine IEmployeeService classını yaratalım
+
+ 4. Interface içine GetAll ve GetById isimli metot imzalarını tanımlayalım.
+
+ 5. API/Web tarafı haberleşirken geri planda veriyi çözümleyecek bir yapı gerekiyor. Çünkü bu geri plandaki veri geliş/gidişi anında JSON veri formatını kullanıyor. Bunu çözümlemek için ()
+
+ 6. Bu interface üzerinden bir Service classı yaratalım. Interface tarafından gelen metotları kodlayalım.
+ 
+ 
+

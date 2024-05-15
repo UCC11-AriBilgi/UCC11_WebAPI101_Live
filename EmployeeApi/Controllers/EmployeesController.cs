@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EmployeeApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]")] // APInin rotalanacağı yer(syntax)
     [ApiController]
     public class EmployeesController : ControllerBase
     {
